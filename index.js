@@ -5,3 +5,6 @@ if (!process.env.CI) {
   console.error(message)
   process.exitCode = 1
 }
+
+// Regex pattern designed to support Windows drive letters
+var windowsDriveLetterRegex = /^[A-Za-z]:\\/;
